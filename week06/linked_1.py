@@ -1,9 +1,12 @@
 class Pokemon:
     # def __init__(self, name, hp, type):
     def __init__(self, hp, type, name=None): # default parameter 값으로 None 할당
-        self.name  = name
-        self.hp = hp
-        self.type = type
+       self.name = name
+       self.hp = hp
+       self.type = type
+
+    def attack(self):
+        print(f"{self.name}이(가) 공격 시전")
 
 pikachu = Pokemon(100, "Electric", "피카츄")
 squirtle = Pokemon(200, "Water", "꼬부기")
@@ -12,3 +15,6 @@ print(charmander.name) # default parameterf로 할당된 None 출력
 print(pikachu.type)
 charmander.name = "파이리" # 위에서 객체 생성된 후 name 속성에 추후 할당
 print(squirtle.hp)
+print(charmander.name)
+squirtle.attack()
+charmander.attack()
