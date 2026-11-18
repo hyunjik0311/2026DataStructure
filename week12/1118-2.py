@@ -1,0 +1,12 @@
+# python list
+
+# empty list
+# subjects = []
+# subjects = list[]
+
+subjects = ['자료구조'] # 초기값을 가진 리스트
+subjects.append('웹프로그래밍') # 추가
+print(subjects)
+# subjects.pop() # 마지막 원소 삭제 (pop은 삭제 전에 값을 리턴하는 기능이 있음)
+print(subjects.pop())
+print(subjects)
