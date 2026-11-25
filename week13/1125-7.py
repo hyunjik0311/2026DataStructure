@@ -1,5 +1,3 @@
-from encodings import search_function
-
 
 class Node:
     def __init__(self, data):
